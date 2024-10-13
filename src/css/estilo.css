@@ -1,0 +1,162 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../imagens/fundo.png");
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(8px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.cartao-simpsons {
+    display: none; /* Todos os cartões são ocultados inicialmente */
+}
+
+.cartao-simpsons:first-child {
+    display: block; /* Somente o primeiro cartão será exibido */
+}
+
+.simpsons {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+
+}
+
+.cartao-simpsons {
+    display: none;
+    max-width: 360px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cartao-simpsons img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.cartao-simpsons .cartao-topo {
+    padding: 30px 40px 0;
+}
+
+.cartao-simpsons .nome {
+    margin-bottom: 5px;
+}
+
+.cartao-simpsons .tipo {
+    background-color: #ffffff;
+    font-size: 12px;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.cartao-simpsons .detalhes {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartao-simpsons .cartao-informacoes {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cartao-simpsons .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6b727a;
+}
+
+.cartao-simpsons .cartao-informacoes .descricao {
+    padding: 0 10px;
+    font-size: 15px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.tipo-preguicoso {
+    background-color: #fcc719;
+}
+
+.tipo-travessura{
+    background-color: #007BFF;
+}
+
+.tipo-inteligente{
+    background-color: #EAB8C8;
+}
+
+.tipo-inteligente{
+    background-color: #EAB8C8;
+}
+
+.tipo-mesquinho{
+    background-color:  #808080;
+}
+
+.tipo-palhaco{
+    background-color: #800080;
+}
+.tipo-amizade{
+    background-color: #fcfcb1;
+}
+
+.listagem{
+    max-width: 200px;
+}
+
+.listagem .simpsons img{
+    width: 25%;
+}
+
+.listagem .simpsons{
+    background-color: #ffc222;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+
+    transition: 0.15 ease-in-out;
+}
+
+.listagem .simpsons:hover{
+    transform: scale(1.05);
+}
+
+.listagem .simpsons span{
+    padding-right: 20px;
+}
+
+.listagem .simpsons.ativo{
+    background-color: #fa6668;
+}

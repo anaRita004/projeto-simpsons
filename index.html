@@ -7,15 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="icon" type="image/x-icon" href="./src/imagens/icon.png"> 
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
     <title>Projeto do Simpsons</title>
 </head>
-
 <body>
     <main>
         <div class="simpsons">
             <div class="cartoes-simpsons">
-                <div class="cartao-simpsons" id="cartao-homer">
+                <div class="cartao-simpsons tipo-preguicoso aberto" id="cartao-homer">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Homer Simpsons</h2>
@@ -31,9 +33,7 @@
                             <h3>Descrição</h3>
                             <p>Homer é o pai da família e o ícone da preguiça. Ele passa a maior parte do tempo
                                 assistindo TV, devorando donuts e sonhando em como seria a vida se não precisasse
-                                trabalhar. Sua filosofia de vida é simples: "Trabalhar duro nunca matou ninguém, mas por
-                                que arriscar?" Homer pode ser um desastre em muitas coisas, mas seu amor pela família é
-                                inegável (embora ele frequentemente se esqueça de levar o lixo para fora).</p>
+                                trabalhar. Sua filosofia de vida é simples: "Trabalhar duro nunca matou ninguém, mas porque arriscar?".</p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
 
                 <!--Bart Simpsons-->
 
-                <div class="cartao-simpsons" id="cartao-bart">
+                <div class="cartao-simpsons tipo-travessura aberto" id="cartao-bart">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Bart Simpsons</h2>
@@ -55,90 +55,77 @@
                     <div class="cartao-informacoes">
                         <div class="descricao">
                             <h3>Descrição</h3>
-                            <p>Bart é o garoto rebelde que adora causar confusão. Com seu famoso "Eu não fiz isso!" como
-                                resposta padrão e um arsenal de travessuras, ele vive em busca da próxima aventura (ou
-                                problema). Se não está pichando muros, está fugindo da escola ou provocando a
-                                professora. Apesar de suas travessuras, Bart tem um coração bom e, no fundo, é um
-                                verdadeiro amante da família (mesmo que não admita).</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Lisa Simpsons-->
-
-                <div class="cartao-simpsons" id="cartao-lisa">
-                    <div class="cartao-topo">
-                        <div class="detalhes">
-                            <h2 class="nome">Lisa Simpsons</h2>
-                            <span>#003</span>
-                        </div>
-                        <span class="tipo">Gênio da Moralidade</span>
-                        <div class="cartao-imagem">
-                            <img src="./src/imagens/lisa.png" alt="Lisa Simpsons">
-                        </div>
-                    </div>
-                    <div class="cartao-informacoes">
-                        <div class="descricao">
-                            <h3>Descrição</h3>
-                            <p>Lisa é a filha prodígio da família, sempre em busca de conhecimento e justiça. Com sua
-                                guitarra em uma mão e um livro na outra, ela é a única voz sensata em um mar de
-                                loucuras. Lisa adora lutar por causas sociais, mesmo que isso signifique chatear sua
-                                família. Ela pode ser uma criança, mas seus ideais são mais maduros do que muitos
-                                adultos. Apesar de ter que lidar com as travessuras de Bart e a inércia de Homer, Lisa
-                                nunca desiste de lutar por um mundo melhor.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Marge Simpsons-->
-
-                <div class="cartao-simpsons" id="cartao-marge">
-                    <div class="cartao-topo">
-                        <div class="detalhes">
-                            <h2 class="nome">Marge Simpsons</h2>
-                            <span>#004</span>
-                        </div>
-                        <span class="tipo">Rainha da Paciência</span>
-                        <div class="cartao-imagem">
-                            <img src="./src/imagens/marge.png" alt="Marge Simpsons">
-                        </div>
-                    </div>
-                    <div class="cartao-informacoes">
-                        <div class="descricao">
-                            <h3>Descrição</h3>
-                            <p>Marge é a âncora da família Simpson, mantendo todos na linha enquanto Homer faz suas
-                                travessuras. Com seu cabelo azul que desafia a gravidade e uma habilidade incomum de
-                                lidar com situações caóticas, ela é a verdadeira heroína. Mesmo quando Homer transforma
-                                a sala em um campo de batalha, Marge é capaz de oferecer uma solução, geralmente com uma
-                                xícara de café e uma expressão de quem já viu de tudo. Ela é a definição de "paciência é
-                                uma virtude", embora às vezes se pergunte se isso vale a pena.</p>
+                            <p>Bart é o garoto rebelde que adora causar confusão. Com seu famoso "Eu não fiz isso!" comoresposta padrão e um arsenal de travessuras, ele vive em busca da próxima aventura (ou problema). Se não está pichando muros, está fugindo da escola ou provocando a
+                            professora.</p>
                         </div>
                     </div>
                 </div>
 
                 <!--Maggie Simpsons-->
 
-                <div class="cartao-simpsons" id="cartao-maggie">
+                <div class="cartao-simpsons tipo-inteligente aberto" id="cartao-lisa">
                     <div class="cartao-topo">
                         <div class="detalhes">
-                            <h2 class="nome">Maggie Simpsons</h2>
-                            <span>#005</span>
+                            <h2 class="nome">lisa Simpsons</h2>
+                            <span>#003</span>
                         </div>
-                        <span class="tipo">Misteriosa Pacifista</span>
+                        <span class="tipo">Inteligente </span>
                         <div class="cartao-imagem">
-                            <img src="./src/imagens/maggie.webp" alt="Marge Simpsons">
+                            <img src="./src/imagens/lisa.png" alt="Marge Simpsons">
                         </div>
                     </div>
                     <div class="cartao-informacoes">
                         <div class="descricao">
                             <h3>Descrição</h3>
-                            <p>Maggie é a bebê silenciosa, mas não se deixe enganar pelo seu olhar inocente. Com sua chupeta e seu olhar de mistério, ela observa tudo ao seu redor, pronta para intervir no momento certo. Maggie pode não falar, mas suas ações falam mais alto do que mil palavras. Se há algo errado na casa, ela está sempre à espreita, pronta para salvar o dia com um sorriso adorável. Ela pode ser a menor, mas tem uma sabedoria que supera todos os outros.</p>
+                            <p>Lisa Simpson é a garota que carrega mais sabedoria em seu saxofone do que muitos adultos têm na vida. Com seu amor pelos livros, ética e o desejo de salvar o mundo, ela parece deslocada em uma família que mal consegue sobreviver a um jantar sem caos. Ambientalista, feminista e vegetariana, Lisa é a alma velha de oito anos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Charles Montgomery-->
+
+                <div class="cartao-simpsons tipo-mesquinho aberto" id="cartao-charles">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Charles Montgomery</h2>
+                            <span>#004</span>
+                        </div>
+                        <span class="tipo">Mesquinho</span>
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/charles.png" alt="Charles Montgomery">
+                        </div>
+                    </div>
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+                            <p>Charles Montgomery Burns, o dono da Usina Nuclear de Springfield, é tão velho que, se o mundo fosse um iPhone, ele seria o primeiro modelo a carvão. Com seu eterno "liberem os cães" e suas tentativas falhas de vilania, ele se mantém firme como o único bilionário que ainda conta moedas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Krusty-->
+
+                <div class="cartao-simpsons tipo-palhaco aberto" id="cartao-krusty">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Krusty</h2>
+                            <span>#005</span>
+                        </div>
+                        <span class="tipo">Rainha da Paciência</span>
+                        <div class="cartao-imagem">
+                            <img src="./src/imagens/palhaco.png" alt="Krusty">
+                        </div>
+                    </div>
+                    <div class="cartao-informacoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+                            <p>Krusty, o Palhaço, é o tipo de humorista que faz você rir enquanto ele chora... pelo dinheiro. Com maquiagem borrada e piadas velhas, ele vive numa montanha-russa de escândalos e cigarros. Seu show é tão caótico que nem ele parece saber o que está acontecendo, mas, de alguma forma, o público ainda o adora.</p>
                         </div>
                     </div>
                 </div>
 
                 <!--Ned Flanders -->
-                <div class="cartao-simpsons" id="cartao-ned">
+                <div class="cartao-simpsons tipo-amizade aberto" id="cartao-flanders">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Ned Flanders</h2>
@@ -152,45 +139,40 @@
                     <div class="cartao-informacoes">
                         <div class="descricao">
                             <h3>Descrição</h3>
-                            <p>Ned é o vizinho super otimista e religioso, sempre com um sorriso no rosto e uma palavra
-                                amável na ponta da língua. Ele é o tipo de pessoa que, mesmo quando Bart faz uma
-                                travessura em sua propriedade, consegue ver o lado positivo da situação. Flanders é o
-                                "bom samaritano" do bairro, sempre disposto a ajudar, mesmo que isso signifique lidar
-                                com as loucuras da família Simpson. Sua fé e boa vontade o tornam um personagem
-                                memorável, apesar de ser frequentemente ignorado por Homer.</p>
+                            <p>Ned Flanders é o vizinho super otimista e religioso, sempre com um sorriso no rosto e uma palavra amável na ponta da língua. Ele é o tipo de pessoa que, mesmo quando Bart faz uma travessura em sua propriedade, consegue ver o lado positivo da situação. Flanders é o "bom samaritano" do bairro, sempre disposto a ajudar.</p>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-        <nav class="listagem">
-            <ul>
-                <li class="simpsons ativo" id="homer">
-                    <img src="./src/imagens/homer.png" alt="Homer Simpsons">
-                    <span>Homer Simpsons</span>
-                </li>
-                <li class="simpsons" id="bart">
-                    <img src="./src/imagens/bart.png" alt="Bart Simpsons">
-                    <span>Bart Simpsons</span>
-                </li>
-                <li class="simpsons" id="lisa">
-                    <img src="./src/imagens/lisa.png" alt="Lisa Simpsons">
-                    <span>Lisa Simpsons</span>
-                </li>
-                <li class="simpsons" id="marge">
-                    <img src="./src/imagens/marge.png" alt="Marge Simpsons">
-                    <span>Marge Simpsons</span>
-                </li>
-                <li class="simpsons" id="maggie">
-                    <img src="./src/imagens/maggie.webp" alt="Marge Simpsons">
-                    <span>Marge Simpsons</span>
-                </li>
-                <li class="simpsons" id="flanders">
-                    <img src="./src/imagens/flanders.png" alt="Ned Flanders">
-                    <span>Ned Flanders</span>
-                </li>
-            </ul>
-        </nav>
+<nav class="listagem"> 
+    <ul>
+        <li class="simpsons ativo" id="homer">
+            <img src="./src/imagens/homer.png" alt="Homer Simpsons">
+            <span>Homer Simpsons</span>
+        </li>
+        <li class="simpsons" id="bart">
+            <img src="./src/imagens/bart.png" alt="Bart Simpsons">
+            <span>Bart Simpsons</span>
+        </li>
+        <li class="simpsons" id="lisa">
+            <img src="./src/imagens/lisa.png" alt="Lisa Simpsons">
+            <span>Lisa Simpsons</span>
+        </li>
+        <li class="simpsons" id="charles">
+            <img src="./src/imagens/charles.png" alt="Charles Montgomery">
+            <span>Charles Montgomery</span>
+        </li>
+        <li class="simpsons" id="krusty">
+            <img src="./src/imagens/palhaco.png" alt="Krusty">
+            <span>Krusty Krustofsky</span>
+        </li>
+        <li class="simpsons" id="flanders">
+            <img src="./src/imagens/flanders.png" alt="Ned Flanders">
+            <span>Ned Flanders</span>
+        </li>
+    </ul>
+</nav>
+
         </div>
     </main>
 </body>
